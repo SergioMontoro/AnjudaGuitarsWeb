@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+    --clr-light-100: rgba(227,218,186,1);
+    --clr-accent-200: rgba(197,175,106,1);
+    --clr-regular-400:rgba(159,153,136,1);
+    --font-soft-background:  rgb(246,246,246);
+    --footer-heavy-background: rgba(28,28,28,1);
+
+    --ff-primary: 'Roboto Condensed', sans-serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+}
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--ff-primary);
+    text-align: center;
+}
+
+
+.container {
+    width: 90%;
+    padding: 2.5rem 0;
+}
+
+img {
+    max-width: 100%;
+    background-color: #ffffff;
+}
+
+h2,
+h3,
+p {
+    margin-block: 0.7rem;
+}
+
+a {
+    text-decoration: none;
+    color:var(--clr-light-100);
+}
+
+
+/* header styles 
+-----------------*/
+header {
+    padding: 0.7rem;
+}
+nav {
+    margin-top: 1rem;
+}
+nav a {
+    padding: 0.5rem;
+}
+nav a:hover {
+    border-bottom: 2px solid;
+}
+
+/* hero style 
+-----------------*/
+
+.home-hero {
+    background-image: url("../img/tail/a-trick-of-the-tail13.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    padding: 3.5rem 0.2rem;
+    background-color: rgba(227,218,186,0.5)
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+.hero-text p {
+    max-width: 70%;
+}
+
+/* contact style 
+-----------------*/
+
+.home-contact {
+    background-color: var(--font-soft-background);
+}
+.home-contact .container > * + * {
+    margin-top: 2rem;
+}
+.contact-block p {
+    color: var(--clr-regular-400);
+}
+
+.contact-block span {
+    font-size: 1.325rem;
+    font-weight: bold;
+}
+
+.email-contact {
+    text-decoration: none;
+    font-size: 1.325rem;
+    font-weight: bold;
+    color: var(--clr-accent-200);
+}
+.home-contact .fa {
+    font-size: 2rem;
+    padding: 0 0.3rem;
+}
+
+/* about style 
+-----------------*/ 
+
+.home-about {
+    background-color: var(--font-soft-background);
+}
+
+/* rates style
+----------------*/
+
+.home-rates {
+    background-image: url("../img/bg-rates.webp");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    
+}
+.home-rates h2 {
+    font-size: 2rem;
+}
+
+.home-rates .fa {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* footer style 
+-----------------*/
+
+footer {
+    background-color: var(--footer-heavy-background);
+    color: var(--clr-accent-200);
+}
+.list {
+    list-style: none;
+}
+footer .container > * + * {
+    margin-top: 2rem;
+}
+
+.unlinked-list li {
+    color:#ffffff;
+}
