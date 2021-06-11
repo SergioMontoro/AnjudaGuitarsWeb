@@ -3,159 +3,200 @@
 
 
 :root {
-    --clr-light-100: rgba(227,218,186,1);
-    --clr-accent-200: rgba(197,175,106,1);
-    --clr-regular-400:rgba(159,153,136,1);
-    --font-soft-background:  rgb(246,246,246);
-    --footer-heavy-background: rgba(28,28,28,1);
+    --clr-primary-200: rgba(227,218,186,1);
+    --clr-primary-400: rgba(197,175,106,1);
+    --clr-primary-600:rgba(159,153,136,1);
+
+    --clr-neutral-200:  rgb(246,246,246);
+    --clr-neutral-600: rgba(28,28,28,1);
 
     --ff-primary: 'Roboto Condensed', sans-serif;
     --ff-secondary: 'Montserrat', sans-serif;
 }
 
-
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: var(--ff-primary);
     text-align: center;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--clr-primary-400);
 }
 
 
 .container {
     width: 90%;
-    padding: 2.5rem 0;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flex--header {
+    flex-direction: row;
+    align-items: center;
+}
+
+.bg-light {
+    background-color: var(--clr-neutral-200);
+}
+.bg-medium {
+    background-color: var(--clr-primary-400);
+}
+.bg-dark {
+    background-color: var(--clr-neutral-600);
 }
 
 img {
     max-width: 100%;
-    background-color: #ffffff;
 }
 
-h2,
-h3,
-p {
-    margin-block: 0.7rem;
-}
-
-a {
+.btn {
+    display: inline-block;
     text-decoration: none;
-    color:var(--clr-light-100);
+    padding: 1rem 7rem;
+    background-color: white;
+    border: 2px solid white;
+    color:var(--clr-primary-400);
+    font-weight: 500;
 }
 
-
-/* header styles 
------------------*/
-header {
-    padding: 0.7rem;
-}
-nav {
-    margin-top: 1rem;
-}
-nav a {
-    padding: 0.5rem;
-}
-nav a:hover {
-    border-bottom: 2px solid;
+.btn:hover {
+    background-color: var(--clr-primary-400);
+    color: white;
 }
 
-/* hero style 
------------------*/
+/* HEADER STYLE 
+--------------+*/
+.navbar {
+    padding-block: 2rem;
+}
+.hamburger {
+    cursor: pointer;
+}
+.hamburger span {
+    height: 4px;
+    width: 30px;
+    margin: 3px 0px;
+    background-color: black;
+    border-radius: 2px;
+    display: block;
+}
 
+/* HERO STYLE
+----------------*/
 .home-hero {
-    background-image: url("../img/tail/a-trick-of-the-tail13.jpg");
+    background-image: url("../img/tail/a-trick-of-the-tail6.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
 
-.hero-text {
-    padding: 3.5rem 0.2rem;
-    background-color: rgba(227,218,186,0.5)
+    padding: 30%;
 }
-
-.hero-text h1 {
-    font-size: 2rem;
-}
-.hero-text p {
-    max-width: 70%;
-}
-
-/* contact style 
------------------*/
-
-.home-contact {
-    background-color: var(--font-soft-background);
-}
-.home-contact .container > * + * {
-    margin-top: 2rem;
-}
-.contact-block p {
-    color: var(--clr-regular-400);
-}
-
-.contact-block span {
-    font-size: 1.325rem;
-    font-weight: bold;
-}
-
-.email-contact {
-    text-decoration: none;
-    font-size: 1.325rem;
-    font-weight: bold;
-    color: var(--clr-accent-200);
-}
-.home-contact .fa {
-    font-size: 2rem;
-    padding: 0 0.3rem;
-}
-
-/* about style 
------------------*/ 
-
-.home-about {
-    background-color: var(--font-soft-background);
-}
-
-/* rates style
+.home-hero__block {
+    display: none;
+} 
+/* CONTACT STYLE
 ----------------*/
+
+.home-contact__block {
+    padding: 0.7rem;
+}
+.home-contact__block h4 {
+    font-weight: 400;
+    color: var(--clr-primary-600);
+}
+.home-contact__block p,
+.home-contact__block a,
+.home-contact__block i {
+    margin: 0.5rem 0.5rem 0 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+.home-contact__block--email a {
+    color: var(--clr-primary-400);
+}
+
+/* ABOUT STYLE
+--------------*/
+
+.home-about__block__text {
+    text-align: left;
+    padding: 1.5rem 3rem 5rem 2.5rem;
+}
+
+/* RATES STYLE 
+--------------*/
 
 .home-rates {
     background-image: url("../img/bg-rates.webp");
     background-position: center;
-    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    color: #ffffff;
+    background-attachment: fixed;
+
+    color: white;
+}
+.home-rates__block {
+    padding: 0.7rem;
+    font-size: 48px;
+    font-weight: bold;
+}
+.home-rates__block__description {
+    font-size: 1rem;
+    text-transform: uppercase;
     
 }
-.home-rates h2 {
-    font-size: 2rem;
+
+
+/* DATE STYLE
+------------*/
+
+.home-date__block {
+    display: none;
+}
+.btn--rates {
+    margin-block: 1.5rem;
 }
 
-.home-rates .fa {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+/* FOOTER STYLE 
+--------------*/
+
+.home-footer {
+    padding-left: 2.5rem;
+}
+.home-footer__block {
+    text-align: left;
+    padding-block: 1.5rem;
+    color: white;
+}
+.home-footer__block h2 {
+    color:var(--clr-primary-400)
 }
 
-/* footer style 
------------------*/
 
-footer {
-    background-color: var(--footer-heavy-background);
-    color: var(--clr-accent-200);
-}
-.list {
-    list-style: none;
-}
-footer .container > * + * {
-    margin-top: 2rem;
-}
 
-.unlinked-list li {
-    color:#ffffff;
-}
+
+

@@ -9,149 +9,191 @@
     <title>Anjuda Guitars Luthier | Inicio - Luthier en Madrid</title>
 </head>
 <body>
-    <header>
 
-        <img src="img/main-logo-210x64.png" alt="Anjuda Guitars Logo">
-        <nav>
-            <a href="">Home</a>
-            <a href="">Manufacturing</a>
-            <a href="">Repair&Restore</a>
-            <a href="">Contact</a>
-        </nav>
+
+    <header class="navbar">
+
+        <div class="container flex flex--header">
+
+            <div class="hamburger" onclick="unfoldedMenu(1)" style="cursor:pointer;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img src="img/main-logo-210x64.png" alt="Anjuda Guitars Logo">
+            <i class="fa fa-phone" aria-hidden="true" style="font-size: 24px;"></i>
+
+        </div>
 
     </header>
 
 
-    <section class="home-hero">
+    <main>
 
-        <div class="hero-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe magni culpa perspiciatis aliquam ex velit.</p>
-            <h1>We manufacture. We repair. We restore</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, quasi?</p>
-        </div>
-       
-    </section>
+        
+        <section class="home-hero">
 
+            <div class="container flex">
 
-    <section class="home-contact">
+                <div class="home-hero__block">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti quis adipisci officiis, maxime atque?</p>
+                    <h1>We manufacture. We restore. We repair</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, fuga?</p>
+                </div>
 
-        <div class="container">
-            <div class="contact-block">
-                <p>Phone:</p>
-                <span>+34 629 11 39 77</span>
             </div>
-            <div class="contact-block">
-                <p>Social Media:</p>
-                <span>
-                    <a href="https://www.facebook.com/anjudaguitars" class="icons"><i class="fa fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/anjudaguitars" class="icons"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/anjudaguitars" class="icons"><i class="fa fa-instagram"></i></a>
-                    <a href="https://web.whatsapp.com" class="icons"><i class="fa fa-whatsapp"></i></a>
-                    <a href="https://www.youtube.com/channel/UCewi-n7n5JCm03wlqbHP5Og" class="icons"><i class="fa fa-youtube-play"></i></a>
-                </span>
+
+        </section>
+
+        <section class="home-contact bg-light">
+
+            <div class="container flex">
+
+                <div class="home-contact__block">
+                    <h4>Phone:</h4>
+                    <p>+34 629 11 39 77</p>
+                </div>
+                <div class="home-contact__block">
+                    <h4>Social media:</h4>
+                    <div class="media-logos">
+                        <a href="https://www.facebook.com/anjudaguitars" class="icons"><i class="fa fa-facebook-f" style="font-size:24px;"></i></a>
+                        <a href="https://twitter.com/anjudaguitars" class="icons"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                        <a href="https://www.instagram.com/anjudaguitars" class="icons"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                        <a href="https://web.whatsapp.com" class="icons"><i class="fa fa-whatsapp" style="font-size:24px"></i></a>
+                        <a href="https://www.youtube.com/channel/UCewi-n7n5JCm03wlqbHP5Og" class="icons"><i class="fa fa-youtube-play" style="font-size:24px"></i></a>
+                    </div>
+                </div>
+                <div class="home-contact__block home-contact__block--email">
+                    <h4>Email:</h4>
+                    <a href="mailto:info@anjudaguitars.es">info@anjudaguitas.es</a>
+                </div>
+
             </div>
-            <div class="contact-block">
-                <p>Email</p>
-                <a class="email-contact" href="mailto:info@anjudaguitars.com">info@anjudaguitars.com</a>
-            </div>
-        </div>
 
-    </section>
+        </section>
 
+        <section class="home-about bg-light">
 
-    <section class="home-about">
-
-            <div class="about-block">
-                <img src="img/luce-logo.webp" alt="LUCE Logo">
-                <div class="container">
-                    <h3>Contemporany Luthieres of Spain</h3>
-                    <p>In Anjuda Guitars we are members of the Association of Contemporary Luthiers
-                        of Spain. Our common goal is to have a collaborative space and join efforts
-                        to give visibility to the electric guitar as an instrument manufactured by
-                        luthier craftsmen.</p>
+            <div class="home-about__block">
+                <img src="img/luce-logo.png" alt="LUCE Logo">
+                <div class="home-about__block__text">
+                    <h2>Contemporary Luthieres of Spain</h2>
+                    <p>In Anjuda Guitars we are members of the Association of Contemporary Luthiers of Spain. 
+                        Our common goal is to have a collaborative space and join efforts to give visibility 
+                        to the electric guitar as an instrument manufactured by luthier craftsmen.</p>
                 </div>
             </div>
-            <div class="about-block">
-                <img src="img/ame-showcase.webp" alt="AME Showchase">
-                <div class="container">
-                    <h3>My guitars</h3>
-                    <p>At Anjuda Guitars Luthier we design and manufacture our guitars. Made one by 
-                        one in our workshop in Madrid. You can see our custom models or embark on the 
-                        adventure of building something exclusive for you.</p>
+            <div class="home-about__block">
+                <img src="img/ame-showcase.webp" alt="AME Showcase">
+                <div class="home-about__block__text">
+                    <h2>My guitars</h2>
+                    <p>At Anjuda Guitars Luthier we design and manufacture our guitars. Made one by one in our 
+                        workshop in Madrid. You can see our custom models or embark on the adventure of building 
+                        something exclusive for you.</p>
                 </div>
             </div>
-            <div class="about-block">
-                <img src="img/luthier-at-work.webp" alt="Marble Machine X">
-                <div class="container">
-                    <h3>Marble Machine X</h3>
+            <div class="home-about__block">
+                <img src="img/luthier-at-work.webp" alt="MMX">
+                <div class="home-about__block__text">
+                    <h2>Marble Machine X</h2>
                     <p>From Anjuda Guitars we help Martin Molin to fulfill his dream (and that of many followers), 
-                        to build a musical machine that works with marbles that also allows the musician to 
-                        interact with the different instruments in it. Hard to understand? Check out his YouTube 
-                        channel.</p>
+                        to build a musical machine that works with marbles that also allows the musician to interact 
+                        with the different instruments in it. Hard to understand? Check out his YouTube channel.</p>
                 </div>
             </div>
 
-    </section>
-    
+        </section>
 
-    <section class="home-rates">
+        <section class="home-rates">
 
-        <div class="container">
-            <div class="rates-block">
-                <i class="fa fa-google"></i>
-                <h2>4,9/5</h2>
-                <p>Our valuations on Google</p>
+            <div class="container flex">
+
+                <div class="home-rates__block">
+                    <i class="fa fa-google"></i>
+                    <p>4,9/5</p>
+                    <p class="home-rates__block__description">Our valuations on Google</p>
+                </div>
+                <div class="home-rates__block">
+                    <i class="fa fa-calendar"></i>
+                    <p>8</p>
+                    <p class="home-rates__block__description">Years of experience as luthier of contemporary instruments.</p>
+                </div>
+                <div class="home-rates__block">
+                    <i class="fa fa-facebook-square"></i>
+                    <p>5/5</p>
+                    <p class="home-rates__block__description">Our valuations on Facebook</p>
+                </div>
+
             </div>
-            <div class="rates-block">
-                <i class="fa fa-calendar"></i>
-                <h2>8</h2>
-                <p>Years of experiene as a luthier of contemporany instruments</p>
+
+        </section>
+
+        <section class="home-date bg-medium">
+
+            <div class="container flex">
+
+                <div class="home-date__block">
+                    <h2>Talk to us</h2>
+                    <p>Don't wait any longer nad request an appointment</p>
+                </div>
+                <div class="home-date__block--btn">
+                    <a class="btn btn--rates" href="">Ask for a date</a>
+                </div>
+
             </div>
-            <div class="rates-block">
-                <i class="fa fa-facebook-square"></i>
-                <h2>5/5</h2>
-                <p>Our valuations on Facebook</p>
+
+        </section>
+
+        <footer class="home-footer bg-dark">
+
+            <div class="container flex">
+
+                <div class="home-footer__block">
+                    <h2>Jobs</h2>
+                    <ul>
+                        <li><a href="sites/repair_restore.html">Electric Guitar Repair</a></li>
+                        <li><a href="sites/custom_shop.html">Manufacture of Electric Guitars</a></li>
+                        <li><a href="sites/repair_restore.html">Instrument Restoration</a></li>
+                    </ul>
+                </div>
+                <div class="home-footer__block">
+                    <h2>Our friends</h2>
+                    <ul>
+                        <li><a href="https://luthierescontemporaneos.com/">Contemporary Luthieres Spain</a></li>
+                        <a href="https://www.radioutopia.org.es/trovador-urbano/">Urban Trouble (Radio Utopia)</a>
+                        <li><a href="https://www.bandbpickups.com/">B&B Pickups</a></li>
+                        <li><a href="https://www.argomguitar.com/">Argom Guitars</a></li>
+                        <li><a href="https://wintergatan.net/">Wintergatan</a></li>
+                        <li><a href="https://www.madinter.com/es/">Madinter</a></li>
+                        <li><a href="https://www.fredguitar.com/fr/">Fred's Guitar Parts</a></li>
+                    </ul>
+                </div>
+                <div class="home-footer__block">
+                    <h2>Tags</h2>
+                    <ul>
+                        <li>Luthier Madrid</li>
+                        <li>Luthier Alcobendas</li>
+                        <li>Electric Guitar</li>
+                        <li>Spanish Guitar</li>
+                        <li>Acoustic Guitar</li>
+                        <li>12 Strings Guitar</li>
+                        <li>Electric Bass</li>
+                        <li>Acoustic Bass</li>
+                        <li>String change</li>
+                        <li>Soul adjustmnet</li>
+                        <li>Change nut</li>
+                        <li>Delay</li>
+                        <li>Luthier Workshop</li>
+                    </ul>
+                </div>
+
             </div>
-        </div>
 
-    </section>
+        </footer>
 
 
-    <footer>
+    </main>
 
-        <div class="container">
-            <ul class="list linked-list">
-                <h2>Jobs</h2>
-                <li>Electric Guitar Repair</li>
-                <li>Manufacture fo Electric Guitars</li>
-                <li>Instrument Restoration</li>
-            </ul>
-            <ul class="list linked-list">
-                <h2>Our friends</h2>
-                <li>Contemporary Luthieres Spain</li>
-                <li>Urban Trouble (Radio Utopia)</li>
-                <li>B&B Pickups</li>
-                <li>Argom Guitars</li>
-                <li>Wintergatan</li>
-                <li>Madinter</li>
-                <li>Fred's Guitar Parts</li>
-            </ul>
-            <ul class="list unlinked-list">
-                <h2>Tags</h2>
-                <li>Luthier Madrid</li>
-                <li>Luthier Alcobendas</li>
-                <li>Electric Guitar</li>
-                <li>Spanish Guitar</li>
-                <li>Acoustic Guitar</li>
-                <li>Electric Bass</li>
-                <li>Acoustic Bass</li>
-                <li>String change</li>
-                <li>Soul adjustment</li>
-                <li>Change nut</li>
-                <li>Luthier Workshop</li>
-            </ul>
-        </div>
 
-    </footer>
 </body>
 </html>
