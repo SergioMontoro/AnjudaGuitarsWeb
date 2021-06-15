@@ -11,18 +11,34 @@
 <body>
 
 
-    <header class="navbar">
+    <header class="navbar bg-white">
 
-        <div class="container flex flex--header">
+        <div class="container container--btn flex-header">
 
             <div class="hamburger" onclick="unfoldedMenu(1)" style="cursor:pointer;">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <img src="img/main-logo-210x64.png" alt="Anjuda Guitars Logo">
+            <div>
+                <img src="img/main-logo-210x64.png" alt="Anjuda Guitars Logo">
+            </div>
             <i class="fa fa-phone" aria-hidden="true" style="font-size: 24px;"></i>
-
+            <nav class="menu">
+                <a class="active" href="">Home</a>
+                <span class="separator">&sol;</span>
+                <div class="submenu-box">
+                    <a class="submenu-btn" href="">Manufacturing<span id="down_arrow" style="margin-left: 3px;">&dtrif;</span></a>
+                    <nav class="submenu">
+                        <a href="">Master Builder</a>
+                        <a href="">Custom Shop</a>
+                    </nav>
+                </div>
+                <span class="separator">&sol;</span>
+                <a href="">Repair&Restore</a>
+                <span class="separator">&sol;</span>
+                <a href="">Contact</a>
+            </nav>
         </div>
 
     </header>
@@ -31,14 +47,13 @@
     <main>
 
         
-        <section class="home-hero">
+        <section class="home-hero bg-white bg-img">
 
-            <div class="container flex">
-
-                <div class="home-hero__block">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corrupti quis adipisci officiis, maxime atque?</p>
-                    <h1>We manufacture. We restore. We repair</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, fuga?</p>
+            <div class="container">
+                <div class="home-hero__block flex-hero">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quaerat et corrupti illo rerum autem soluta eum excepturi quos cum reiciendis nobis officiis dolores tempora, natus non accusantium tenetur ipsa consectetur, aspernatur delectus! Debitis nesciunt ad, fugiat mollitia nam, ab ex velit corrupti vitae quo, et at tenetur dolore deserunt.</p>
+                    <h1 class="hero-title">We manufacture. We restore. We repair.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quaerat et corrupti illo rerum autem soluta eum excepturi quos cum reiciendis nobis officiis dolores tempora, natus non accusantium tenetur ipsa consectetur, aspernatur delectus! Debitis nesciunt ad, fugiat mollitia nam, ab ex velit corrupti vitae quo, et at tenetur dolore deserunt.</p>
                 </div>
 
             </div>
@@ -54,13 +69,13 @@
                     <p>+34 629 11 39 77</p>
                 </div>
                 <div class="home-contact__block">
-                    <h4>Social media:</h4>
+                    <h4 class="media-header">Social media:</h4>
                     <div class="media-logos">
-                        <a href="https://www.facebook.com/anjudaguitars" class="icons"><i class="fa fa-facebook-f" style="font-size:24px;"></i></a>
-                        <a href="https://twitter.com/anjudaguitars" class="icons"><i class="fa fa-twitter" style="font-size:24px"></i></a>
-                        <a href="https://www.instagram.com/anjudaguitars" class="icons"><i class="fa fa-instagram" style="font-size:24px"></i></a>
-                        <a href="https://web.whatsapp.com" class="icons"><i class="fa fa-whatsapp" style="font-size:24px"></i></a>
-                        <a href="https://www.youtube.com/channel/UCewi-n7n5JCm03wlqbHP5Og" class="icons"><i class="fa fa-youtube-play" style="font-size:24px"></i></a>
+                        <a href="https://www.facebook.com/anjudaguitars" class="icons"><i class="fa fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/anjudaguitars" class="icons"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/anjudaguitars" class="icons"><i class="fa fa-instagram"></i></a>
+                        <a href="https://web.whatsapp.com" class="icons"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/channel/UCewi-n7n5JCm03wlqbHP5Og" class="icons"><i class="fa fa-youtube-play"></i></a>
                     </div>
                 </div>
                 <div class="home-contact__block home-contact__block--email">
@@ -74,37 +89,34 @@
 
         <section class="home-about bg-light">
 
-            <div class="home-about__block">
-                <img src="img/luce-logo.png" alt="LUCE Logo">
-                <div class="home-about__block__text">
+            <div class="grid">
+                <img class="grid__item1" src="img/logo-luce.webp" alt="LUCE LOGO">
+                <div class="grid__item2 home-about__block__text">
                     <h2>Contemporary Luthieres of Spain</h2>
-                    <p>In Anjuda Guitars we are members of the Association of Contemporary Luthiers of Spain. 
-                        Our common goal is to have a collaborative space and join efforts to give visibility 
+                    <p>In Anjuda Guitars we are members of the Association of Contemporary Luthiers of Spain.
+                        Our common goal is to have a collaborative space and join efforts to give visibility
                         to the electric guitar as an instrument manufactured by luthier craftsmen.</p>
                 </div>
-            </div>
-            <div class="home-about__block">
-                <img src="img/ame-showcase.webp" alt="AME Showcase">
-                <div class="home-about__block__text">
+                
+                <img class="grid__item3" src="img/ame-showcase.webp" alt="AME Showcase">
+                <div class="grid__item4 home-about__block__text flex--text">
                     <h2>My guitars</h2>
-                    <p>At Anjuda Guitars Luthier we design and manufacture our guitars. Made one by one in our 
-                        workshop in Madrid. You can see our custom models or embark on the adventure of building 
+                    <p>At Anjuda Guitars Luthier we design and manufacture our guitars. Made one by one in our
+                        workshop in Madrid. You can see our custom models or embark on the adventure of building
                         something exclusive for you.</p>
                 </div>
-            </div>
-            <div class="home-about__block">
-                <img src="img/luthier-at-work.webp" alt="MMX">
-                <div class="home-about__block__text">
+                <img class="grid__item5" src="img/luthier.webp" alt="MMX">
+                <div class="grid__item6 home-about__block__text">
                     <h2>Marble Machine X</h2>
-                    <p>From Anjuda Guitars we help Martin Molin to fulfill his dream (and that of many followers), 
-                        to build a musical machine that works with marbles that also allows the musician to interact 
+                    <p>From Anjuda Guitars we help Martin Molin to fulfill his dream (and that of many followers),
+                        to build a musical machine that works with marbles that also allows the musician to interact
                         with the different instruments in it. Hard to understand? Check out his YouTube channel.</p>
                 </div>
             </div>
 
         </section>
 
-        <section class="home-rates">
+        <section class="home-rates bg-img">
 
             <div class="container flex">
 
@@ -116,7 +128,7 @@
                 <div class="home-rates__block">
                     <i class="fa fa-calendar"></i>
                     <p>8</p>
-                    <p class="home-rates__block__description">Years of experience as luthier of contemporary instruments.</p>
+                    <p class="home-rates__block__description">Years of experience as luthier of contemporary instruments</p>
                 </div>
                 <div class="home-rates__block">
                     <i class="fa fa-facebook-square"></i>
@@ -133,8 +145,8 @@
             <div class="container flex">
 
                 <div class="home-date__block">
-                    <h2>Talk to us</h2>
-                    <p>Don't wait any longer nad request an appointment</p>
+                    <h3>Talk to us</h3>
+                    <p>Don't wait any longer and request an appointment with your luthier</p>
                 </div>
                 <div class="home-date__block--btn">
                     <a class="btn btn--rates" href="">Ask for a date</a>
