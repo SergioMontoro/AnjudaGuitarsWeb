@@ -1,0 +1,50 @@
+/* CUSTOM SHOP STYLE
+-------------------*/
+
+@media (min-width: 50rem) {
+    main > section {
+        text-align: left;
+    }
+}
+
+.container {
+    width: min(80%,25rem);
+}
+.custom-shop .container {
+    padding-block: 0;
+}
+@media (min-width: 50rem) {
+    .container {
+        width: min(80%,65rem);
+    }
+}
+
+.custom-shop__block__text {
+    padding: 1.75rem;
+}
+
+@media (min-width: 50rem) {
+    .grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, min-content)
+    }
+}
+
+/* SHOWCASE STYLE
+-----------------*/
+
+.custom-showcase__block {
+    margin-top: 1.7rem;
+}
+.custom-showcase__block__img {
+    height: 15rem;
+}
+
+@media (min-width: 50rem) {
+    .custom-showcase__block__img {
+        height: 20rem;
+        width: 20%;
+    }
+}

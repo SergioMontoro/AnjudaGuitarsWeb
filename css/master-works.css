@@ -1,0 +1,130 @@
+/* HERO STYLE
+-------------*/
+
+.master-hero__img {
+    height: 30vw;
+    background-size: 100%;
+}
+.master-hero__title {
+    padding-top: 0;
+}
+.master-hero__title h2 {
+    font-family: 'Zilla Slab';
+    text-shadow: 2px 2px rgb(197, 196, 194);
+    border-bottom: 2px solid rgba(64,64,64,1);
+}
+@media (min-width: 65rem) {
+    .master-hero__img {
+        background-size: 60%;
+    }
+    .master-hero__title h2 {
+        font-size: 36px;
+    }
+}
+
+/* SPLIT STYLE
+--------------*/
+
+    .master-split {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6rem;
+        background-color: white;
+    }
+    .line {
+        height: 2px;
+        width: 20%;
+        background-color: black;
+    }
+
+
+/* ABOUT STYLE
+--------------*/
+
+main section:not(.master-hero):not(.master-btn) {
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, max-content);
+    max-width: 40rem;
+    margin: auto;
+}
+@media (min-width: 65rem) {
+    .grid {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: none;
+    }
+    .grid__item3 {
+        grid-area: 2/2;
+    }
+}
+
+.grid__item1,
+.grid__item3 {
+    position: relative;
+}
+
+.prev, .next {    
+    top: 45%;
+    margin: 0 10px;
+    font-size: 45px;
+    color: rgb(138, 131, 131);
+    opacity: 0.5;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+.grid__item2,
+.grid__item4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid__item__text {
+    font-size: 1.1rem;
+    max-width: 65ch;
+}
+
+/* SPECIFICATIONS STYLE
+----------------------*/
+
+.master-specs {
+    display: flex;
+    flex-direction: row;
+}
+
+.master-specs__block--specifications {
+    background-color: var(--clr-primary-200);
+    padding-inline: 2rem;
+}
+
+.master-specs__block--hardware {
+    background-color: var(--clr-primary-400);
+    padding-inline: 2rem;
+}
+
+ul {
+    color: white;
+}
+
+/* BUTTON STYLE
+---------------*/
+
+.btn {
+    padding: 1em 5em;
+    background-color: transparent;
+    border: solid 2px var(--clr-primary-400);
+}

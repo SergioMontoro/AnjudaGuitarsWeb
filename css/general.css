@@ -22,6 +22,7 @@
 
 body {
     background-color: var(--clr-neutral-200);
+    color: rgba(64,64,64,1);
     text-align: center;
     font-family: var(--ff-primary);
     font-weight: 400;
@@ -33,6 +34,20 @@ h2,
 h3,
 h4 {
     margin-bottom: 1.35rem;
+}
+
+.h2-styled {
+    font-weight: normal;
+    font-size: 36px;
+    opacity: 1;
+}
+.b,
+.lead {
+    font-weight: bold;
+}
+.q {
+    font-style: italic;
+    font-weight: 200;
 }
 
 ul {
@@ -85,13 +100,13 @@ a {
     border-bottom: 2px solid;
 }
 
-/* CONTAINER AND FLEX STYLE
+/* CONTAINERS AND FLEX STYLE
 --------------------------*/
 
 .container {
     width: min(80%,65rem);
     margin: 0 auto;
-    padding-block: min(6.5%, 2.5rem);
+    padding-block: min(6.5%, 2.35rem);
 }
 .flex {
     display: flex;
@@ -99,18 +114,11 @@ a {
     justify-content: space-around;
     gap: 1.3rem;
 }
-.flex-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 
 
 @media (min-width: 50rem) {
     .flex {
         flex-direction: row;
-        align-items: unset;
     }
     .flex > * {
         flex-basis: 100%;
@@ -136,6 +144,9 @@ a {
 .bg-dark {
     background-color: var(--clr-neutral-600);
 }
+.bg-shadow {
+    background: rgba(0,0,0,0.6);
+}
 .bg-img {
     background-position: center;
     background-size: cover;
@@ -146,17 +157,20 @@ a {
 --------------*/
 
 img {
+    height: auto;
     max-width: 100%;
+    object-fit: cover;
 }
 
 /*BUTTONS STYLE
 ---------------*/
 
 .btn {
-    margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 1em;
     display: inline-block;
     text-decoration: none;
-    padding: 1rem 7rem;
+    padding: 1em 7rem;
     background-color: white;
     border: 2px solid white;
     color:var(--clr-primary-400);
@@ -185,17 +199,21 @@ img {
     top: 0;
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
+}
+.navbar .container {
+    width: min(97.5%,65rem);
 }
 .menu {
+    margin-top: 1.5rem;
+}
+.separator {
     display: none;
 }
 @media (min-width: 50rem) {
-    .hamburger,
-    .navbar .container i {
-        display: none;
-    }
-    .menu {
+    .menu,
+    .separator {
+        font-size: 1.15rem;
         display: inline-block;
     }
 }

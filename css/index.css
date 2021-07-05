@@ -15,7 +15,7 @@
         background-image: none;
     }
     .home-hero .container {
-        height: calc(100vh - 151px);
+        height: calc(100vh - 200px);
         background-image: url("../img/bg-hero.jpg");
         background-repeat: no-repeat;
         background-size: auto;
@@ -26,14 +26,19 @@
         width: 55%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
+@media (min-width: 120rem) {
+    .home-hero__block {
+        justify-content: space-evenly;
+    }
+}
     .hero-title {
         position: absolute;
         font-size: 2.85rem;
         line-height: normal;
-        margin-bottom: 0;
+        margin-block: 1.5rem;
     }
 }
 @media (min-width: 90rem) {
@@ -90,7 +95,7 @@
         grid-template-rows: repeat(3, min-content);
     }
     .grid__item3 {
-        grid-area: 2/2;
+        grid-area: 2 / 2;
     }
     .home-about {
         max-width: none;
