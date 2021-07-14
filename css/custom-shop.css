@@ -7,9 +7,6 @@
     }
 }
 
-.container {
-    width: min(80%,25rem);
-}
 .custom-shop .container {
     padding-block: 0;
 }
@@ -48,3 +45,41 @@
         width: 20%;
     }
 }
+
+/* OVERLAY GALLERY STYLE
+
+.overlay-gallery {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+.x {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+}
+.overlay-gallery__row {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4,1fr);
+}
+.stock-img__blue,
+.stock-img__green,
+.stock-img__sunburst {
+    cursor: pointer;
+    opacity: .65;
+    display: none;
+}
+
+.stock-img__blue:hover, 
+.stock-img__green:hover, 
+.stock-img__sunburst:hover {
+    opacity: 1;
+}
+
+----------------------*/

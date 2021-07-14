@@ -1,0 +1,27 @@
+.contact-form {
+    position: relative;
+}
+.contact-form__block--text,
+.contact-form__block--form {
+    visibility: hidden;
+}
+.contact-form__block--submmited {
+    position: absolute;
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgba(64,64,64,1);
+    border: 2px solid white;
+    padding: 2.5rem;
+}
+@media (min-width: 35rem) {
+    .contact-form__block--submmited {
+        font-size: 1.6rem;
+        padding: 3.5rem;
+    }
+}
+.anchor {
+    display: block;
+    height: 197.19px;
+    margin-top: -197.19px;
+    visibility: hidden;
+  }

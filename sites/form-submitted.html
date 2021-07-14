@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/form-submitted.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="../img/favicon/16x16.png" type="image/x-icon">
     <title>Anjuda Guitars Luthier | Inicio - Luthier en Madrid</title>
@@ -34,7 +35,7 @@
                 <span class="separator">&sol;</span>
                 <a href="../sites/repair-restore.html">Repair & Restore</a>
                 <span class="separator">&sol;</span>
-                <a class="active" href="">Contact</a>
+                <a class="active" href="../sites/contact.html">Contact</a>
             </nav>
 
         </div>
@@ -65,13 +66,15 @@
                     </ul>
                 </div>
 
-                <div class="contact-location__iframe">
+                <div class="contact-location__frame">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.742270553175!2d-3.6508077842910636!3d40.5472828556125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422cf2fd5b9967%3A0xa7e29fe63d2ad9d2!2sAnjuda%20Guitars%20Luthier!5e0!3m2!1sen!2ses!4v1625374715033!5m2!1sen!2ses" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
             </div>
 
         </section>
+
+        <span class="anchor" id="thanks"></span>
 
         <section class="contact-contact bg-light">
 
@@ -99,7 +102,7 @@
             </div>
 
         </section>
-
+        
         <section class="contact-form bg-medium">
 
             <div class="container flex">
@@ -109,7 +112,7 @@
                     <p>I hope we can work together soon!</p>
                 </div>
                 <div class="contact-form__block--form">
-                    <form action="../php/form-data.php" method="POST">
+                    <form action="../php/action2.php" method="POST">
                         <h2>send us a message</h2>
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" value="" autofocus required>
@@ -123,6 +126,10 @@
                         <textarea id="message" name="message" cols="30" rows="10" required></textarea>
                         <input type="submit" value="Submit">
                     </form>
+                </div>
+                <div class="contact-form__block--submmited container">
+                    <h2>Thank you!</h2>
+                    <p>Your message has been submitted.</p>
                 </div>
             </div>
 
